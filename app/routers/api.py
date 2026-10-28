@@ -1,10 +1,9 @@
 from fastapi import APIRouter
 
-from app.routers import echo, health, llm_test, random_api
+from app.routers import agent_chat, chat,  llm_test
 
 api_router = APIRouter(prefix="/api")
 
-api_router.include_router(health.router)
-api_router.include_router(random_api.router)
-api_router.include_router(echo.router)
 api_router.include_router(llm_test.router)
+api_router.include_router(chat.router)
+api_router.include_router(agent_chat.router)

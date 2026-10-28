@@ -3,3 +3,10 @@ uvicorn[standard]
 pydantic-settings
 langchain
 langchain-google-genai
+langchain-community 
+pypdf
+langchain-text-splitters
+langchain-huggingface 
+sentence-transformers
+pymongo
+httpx
